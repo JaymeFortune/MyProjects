@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+
+::-webkit-scrollbar { 
+    width: 0px;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 100%;
+}
+
+.header {
+	max-width: 100%px;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0px auto;
+}
+
+/* HEADER_NAV */
+
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.header-nav__items {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.nav-menu {
+	display: flex;
+	list-style-type: none;
+	gap: 50px;
+}
+
+.nav-menu_link {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	text-decoration: none;
+
+	color: #1F1F1F;
+}
+
+/* HEADER_CONTENT */
+
+.header-bottom {
+	max-width: 100%;
+	min-height: 500px;
+
+	background: url(/MyProject2/image/header/Banner.png);
+	background-size: cover;
+}
+
+.header-bottom__content {
+	min-height: 532px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 40px;
+}
+
+.header-content_title {
+	font-family: 'Cormorant', serif;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+
+	color: #1F1F1F;
+}
+
+.header-content_subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 39px;
+
+	color: #1F1F1F;
+}
+
+.header-content_link {
+	width: 200px;
+	min-width: 200px;
+	background: #FF8126;
+	border-radius: 5px;
+	padding: 10px 36px;
+
+	color: #FFFFFF;
+
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-decoration: none;
+}
+
+/* MAIN */
+
+/* MAIN_OFFERS */
+
+.main__offers-content {
+	padding: 80px 0px 40px 0px;
+}
+
+.main__offers-title {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+
+	color: #1F1F1F;
+
+	margin-bottom: 40px;
+}
+
+.main__offers-title_span {
+	color: #FF8126;
+}
+
+.main__offers-cards {
+	display: flex;
+	max-width: 100%;
+	min-height: 330px;
+	gap: 65px;
+}
+
+.main__offers-cards_item {
+	background-color: #F7F5F0;
+
+	border-radius: 20px 20px;
+
+	text-align: center;
+	display: grid;
+	align-content: stretch;
+	align-items: start;
+	justify-items: center;
+}
+
+.main__offers-cards_subtitle {
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+
+	color: #1F1F1F;
+}
+
+.main__offers-cards_price {
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+
+	color: #FF8126;
+}
+
+.main__offers-cards_price-span {
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	text-decoration-line: line-through;
+
+	color: #656565;
+}
+
+.main__offers-cards_btn {
+	padding: 10px 65px;
+
+	background: #FF8126;
+	border-radius: 5px;
+
+	color: #FFFFFF;
+
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-decoration: none;
+}
+
+/* MAIN_CHOOSE */
+
+.main__choose-content {
+	padding: 40px 0px 40px 0px;
+}
+
+.main__choose-title {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+
+	color: #1F1F1F;
+
+	margin-bottom: 40px;
+}
+
+.main__choose-title_span {
+	color: #FF8126;
+}
+
+.main__choose-cards {
+	display: flex;
+	max-width: 100%;
+	min-height: 330px;
+	gap: 60px;
+}
+
+.main__choose-cards_item {
+	max-width: 210px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.main__choose-cards_subtitle {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+
+	color: #1F1F1F;
+}
+
+.main__choose-cards_description {
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	
+	color: #1F1F1F;
+}
+
+/* MAIN_FOOD */
+
+.main__food-content {
+	display: flex;
+}
+
+.main__food-content-left {
+	display: grid;
+	justify-items: start;
+}
+
+.main__food-content-title {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+
+	color: #1F1F1F;
+}
+
+.main__food-content-span {
+	color: #FF8126;
+}
+
+.main__food-content-subtitle {
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #1F1F1F;
+
+	margin-bottom: 30px;
+}
+
+.main__food-content-list {
+	min-height: 280px;
+	display: grid;
+	margin-bottom: 45px;
+}
+
+.main__food-content-list_item {
+	font-family: 'Poppins';
+	font-size: 16px;
+	line-height: 24px;
+	
+	color: #1F1F1F;
+
+	list-style-type: none;
+}
+
+.main__food-content-link {
+	padding: 10px 65px;
+
+	background: #FF8126;
+	border-radius: 5px;
+
+	color: #FFFFFF;
+
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-decoration: none;
+}
+
+/* MAIN_CHARITY */
+
+.main__charity {
+	min-height: 395px;
+	margin: 80px 0px;
+
+	background: url(/MyProject2/image/charity/OurPartner.png);
+}
+
+.main__charity-content {
+	display: grid;
+	justify-content: space-evenly;
+	justify-items: center;
+	gap: 50px;
+	padding: 60px 0px;
+}
+
+.main__charity-title {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+
+	color: #FFFFFF;
+}
+
+.main__charity-link {
+	padding: 10px 65px;
+
+	background: #FF8126;
+	border-radius: 5px;
+
+	color: #FFFFFF;
+
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-decoration: none;
+}
+
+/* MAIN_SURPRISE */
+
+.main__surprise-content {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 80px;
+}
+
+.main__surprise-right {
+	display: grid;
+	align-items: center;
+	align-content: space-evenly;
+	justify-items: start;
+}
+
+.main__surprise-title {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+
+	color: #1F1F1F;
+}
+
+.surprise-title_span {
+	color: #FF8126;
+}
+
+.main__surprise-description {
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #1F1F1F;
+}
+
+.main__surprise-link {
+	padding: 10px 65px;
+
+	background: #FF8126;
+	border-radius: 5px;
+
+	color: #FFFFFF;
+
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-decoration: none;
+}
+
+.instagram__content {
+	margin-bottom: 80px;
+}
+
+
+.instagram__title {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+
+	color: #1F1F1F;
+
+	margin-bottom: 40px;
+}
+
+.instagram__title-link {
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-decoration: none;
+
+	color: #FF8126;
+}
+
+.instagram__images {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main__social {
+	min-height: 260px;
+
+	background: url(/MyProject2/image/social/TellaFrind.png);
+}
+
+.main__social_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 60px 0px;
+
+	margin-bottom: 60px;
+}
+
+.main__social-title {
+	margin-bottom: 40px;
+
+	font-family: 'Cormorant';
+	font-weight: 700;
+	font-size: 40px;
+
+	color: #1F1F1F;
+}
+
+.main__social-link {
+	margin-right: 30px;
+}
+
+/* FOOTER */
+
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	padding-bottom: 60px;
+}
+
+.content__items {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.content__items-title {
+	margin-bottom: 15px;
+
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+
+	color: #1F1F1F;
+}
+
+.content__items-link {
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+
+	color: #3D3D3D;
+	text-decoration: none;
+}
